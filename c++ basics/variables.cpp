@@ -11,6 +11,10 @@ int main() {
     bool b = "True"; //boolean (true or false)
     double d; // double 
     float f; //float 
-    
+
+    int k;
+    int l;
+    cin >> k >> l; //taking two integer inputs at the same time
+     
 
 }
