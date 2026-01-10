@@ -35,3 +35,14 @@ int divide(int dividend, int divisor) {
         }
         return sign ? quotient : -quotient;
     }
+
+int main() {
+    int dividend, divisor;
+    cout << "Enter dividend and divisor" << endl;
+    cin >> dividend >> divisor;
+
+    int quotient = divide(dividend,divisor);
+    cout << "Quotient : " << quotient << endl;
+
+    return 0;
+}
