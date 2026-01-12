@@ -21,3 +21,12 @@ int lengthOfLastWord(string s) {
         
         return length;
     }
+
+int main() {
+    string s;
+    cout << "Enter a string : " << endl;
+    cin >> s;
+
+    int result = lengthOfLastWord(s);
+    cout << "Length of the last word of the string is : " << result << endl;
+}
