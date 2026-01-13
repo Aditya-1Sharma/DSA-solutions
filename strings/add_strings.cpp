@@ -29,5 +29,11 @@ std::string addStrings(std::string num1, std::string num2) {
     }
 
 int main() {
+    string num1, num2;
+    cout << "Enter the numbers in the strings : " << endl;
+    cin >> num1 >> num2;
+
+    string result = addStrings(num1, num2);
+    cout << "Sum of the two strings : " << result << endl;
 
 }
