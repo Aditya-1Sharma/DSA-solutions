@@ -32,3 +32,20 @@ string longestCommonPrefix(vector<string>& strs) {
         }
         return x;
     }
+
+int main() {
+    int n;
+    cout << "Enter the size of array : " << endl;
+    cin >> n;
+
+    vector<string> strs(n);
+    cout << "Enter " << n << " strings : ";
+    for (int i = 0; i < n; i++) {
+        cin >> strs[i];
+    }
+
+    string result = longestCommonPrefix(strs);
+    cout << "Longest Common Prefix : " << result << endl;
+
+    return 0;
+}
