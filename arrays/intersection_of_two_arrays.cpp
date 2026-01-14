@@ -29,3 +29,38 @@ vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
         return result;
     }
 
+void printVector(const vector<int>& arr) {
+    cout << "[";
+    for (size_t i = 0; i < arr.size(); ++i) {
+        cout << arr[i];
+        if (i < arr.size() - 1) {
+            cout << ", "; // Add space after comma for better readability
+        }
+    }
+    cout << "]";
+}
+
+int main () {
+    int n1, n2;
+    cout << "Enter the number of elements in nums1 and nums2 : " << endl;
+    cin >> n1 >> n2;
+
+    vector<int> nums1(n1);
+    cout << "Enter " << n1 << " integers : ";
+    for(int i=0; i<n1; i++){
+        cin >> nums1[i];
+    }
+
+    vector<int> nums2(n2);
+    cout << "Enter " << n2 << " integers : ";
+    for(int j=0; j<n2; j++){
+        cin >> nums2[j];
+    }
+    
+    vector<int> result = intersection(nums1,nums2);
+    cout << "Intersection of the two arrays : " ;
+    printVector(result);
+    cout << endl;
+
+    return 0;
+ }
