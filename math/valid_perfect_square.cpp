@@ -24,5 +24,8 @@ int main() {
     cout << "Enter a positive integer : " << endl;
     cin >> num;
 
-    int result = isPerfectSquare
+    bool result = isPerfectSquare(num);
+    cout << result;
+    
+    return 0;
 }
