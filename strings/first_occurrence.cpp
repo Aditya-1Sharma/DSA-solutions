@@ -1,3 +1,11 @@
+//Find the Index of the First Occurrence in a String
+
+//Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
 int strStr(string haystack, string needle) {
          int n1 = haystack.size();
          int n2 = needle.size();
@@ -7,3 +15,15 @@ int strStr(string haystack, string needle) {
          }
          return -1;
     }
+
+int main() {
+    string haystack,needle;
+    cout << "Haystack : ";
+    cin >> haystack ;
+    
+    cout << "Needle : ";
+    cin >> needle ;
+
+    int result = strStr(haystack,needle);
+    cout << "Index of the first occurrence of needle in haystack is : " << result << endl;
+}
