@@ -54,5 +54,22 @@ public:
 };
 
 int main() {
+    MyStack s;
     
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    
+    cout << s.top() << endl;
+    
+    s.pop();
+    cout << s.top() << endl;
+    
+    s.pop();
+    cout << s.empty() << endl;
+    
+    s.pop();
+    cout << s.empty() << endl;
+    
+    return 0;
 }
