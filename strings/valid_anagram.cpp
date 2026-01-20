@@ -1,3 +1,8 @@
+// Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+#include <bits/stdc++.h>
+using namespace std;
+
 bool isAnagram(string s, string t) {
         if(s.size() != t.size()) return false;
 
@@ -14,3 +19,14 @@ bool isAnagram(string s, string t) {
         }
         return true;
     }
+
+int main() {
+    string s,t;
+    cout << "Enter string s : ";
+    cin >> s;
+    cout << "Enter string t : ";
+    cin >> t;
+
+    bool result = isAnagram(s,t);
+    cout << result;
+}
