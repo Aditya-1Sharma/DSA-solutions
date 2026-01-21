@@ -42,5 +42,44 @@ vector<int> fairCandySwap(vector<int>& alice, vector<int>& bob) {
     }
 
 int main() {
+    // Test Case 1
+    vector<int> alice1 = {1, 1};
+    vector<int> bob1 = {2, 2};
     
+    cout << "Test Case 1:" << endl;
+    cout << "Alice: "; printVector(alice1);
+    cout << " Bob: "; printVector(bob1);
+    cout << endl;
+    
+    vector<int> result1 = fairCandySwap(alice1, bob1);
+    cout << "Swap (Alice, Bob): "; printVector(result1);
+    cout << "\n--------------------------------\n";
+
+    // Test Case 2
+    vector<int> alice2 = {1, 2};
+    vector<int> bob2 = {2, 3};
+
+    cout << "Test Case 2:" << endl;
+    cout << "Alice: "; printVector(alice2);
+    cout << " Bob: "; printVector(bob2);
+    cout << endl;
+
+    vector<int> result2 = fairCandySwap(alice2, bob2);
+    cout << "Swap (Alice, Bob): "; printVector(result2);
+    cout << "\n--------------------------------\n";
+
+    // Test Case 3 (Alice has larger sum initially)
+    vector<int> alice3 = {2};
+    vector<int> bob3 = {1, 3};
+
+    cout << "Test Case 3:" << endl;
+    cout << "Alice: "; printVector(alice3);
+    cout << " Bob: "; printVector(bob3);
+    cout << endl;
+
+    vector<int> result3 = fairCandySwap(alice3, bob3);
+    cout << "Swap (Alice, Bob): "; printVector(result3);
+    cout << endl;
+
+    return 0;
 }
