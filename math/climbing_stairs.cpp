@@ -3,6 +3,7 @@
 // Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 
 #include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 int climbStairs(int n) {
@@ -16,4 +17,15 @@ int climbStairs(int n) {
 
         return cs[n];
     }
-};
+
+int main() {
+    int n;
+    cout << "Enter the number of steps : " ;
+    cin >> n;
+
+    int ways = climbStairs(n);
+    cout << "Number of ways to climb the stairs : " << ways << endl;
+
+    return 0;
+
+}
