@@ -22,7 +22,7 @@ int majorityElement(vector<int>& nums) {
     
 int main() {
     int n;
-    cout << "Enter the elements of the array : ";
+    cout << "Enter the number of elements of the array : ";
     cin >> n;
     
     vector<int> nums(n);
