@@ -25,4 +25,6 @@ int main() {
     
     int MissingNumber = missingNumber(nums);
     cout << "Missing Number = " << MissingNumber << endl;
+    
+    return 0;
 }
